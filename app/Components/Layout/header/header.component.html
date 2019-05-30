@@ -1,0 +1,20 @@
+<nav class="navbar navbar-dark bg-dark justify-content-between">
+  <a class="navbar-brand" href="#">
+    <img src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" width="30" height="30"
+      class="d-inline-block align-top" alt="">
+    Bootstrap
+  </a>
+  <form class="form-inline">
+    <div ngbDropdown class="d-inline-block mr-sm-2">
+      <button class="btn btn-sm btn-outline-light my-2 my-sm-0" type="button" id="userDropdown" ngbDropdownToggle>
+        Oliver Brennan
+      </button>
+      <div ngbDropdownMenu aria-labelledby="userDropdown">
+        <button ngbDropdownItem>Action - 1</button>
+        <button ngbDropdownItem>Another Action</button>
+        <button ngbDropdownItem>Something else is here</button>
+      </div>
+    </div>
+    <button class="btn btn-sm btn-danger my-2 my-sm-0" type="submit">Sign Out</button>
+  </form>
+</nav>

@@ -1,0 +1,40 @@
+<hr>
+<div class="row">
+  <div class="col">
+    <input class="form-control form-control-sm mr-sm-2" type="search" placeholder="NHS Number" aria-label="Search">
+  </div>
+  <div class="col">
+    <input class="form-control form-control-sm mr-sm-2" type="search" placeholder="Hospital Number" aria-label="Search">
+  </div>
+  <div class="col">
+    <input class="form-control form-control-sm mr-sm-2" type="search" placeholder="Surname" aria-label="Search">
+  </div>
+  <div class="col">
+    <input class="form-control form-control-sm mr-sm-2" type="search" placeholder="Forename" aria-label="Search">
+  </div>
+  <div class="col">
+    <button class="btn btn-sm btn-outline-success btn-block my-2 my-sm-0" type="submit">Search</button>
+  </div>
+</div>
+<hr>
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">NHS No</th>
+      <th scope="col">Hosp No</th>
+      <th scope="col">Surname</th>
+      <th scope="col">Forename</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let patient of patients; index as i">
+      <th scope="row">{{ i + 1 }}</th>
+      <td>{{ patient.nhsnumber }}</td>
+      <td>{{ patient.hospitalnumber }}</td>
+      <td>{{ patient.surname }}</td>
+      <td>{{ patient.name }}</td>
+    </tr>
+  </tbody>
+</table>
